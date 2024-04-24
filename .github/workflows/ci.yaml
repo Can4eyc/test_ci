@@ -10,6 +10,12 @@ jobs:
 
     - name: Set up JDK '17'
       uses: actions/setup-java@v4.2.1
+      with:
+        java-version: '17'
+        distribution: zulu
+
+    - name: Echo Java version
+      run: java -version
 
     - name: Checkout
       uses: actions/checkout@v4.1.3
