@@ -1,7 +1,7 @@
 name: My first CI
 on:
   push:
-  workflow_dispatch
+  workflow_dispatch:
 jobs:
   set_env:
     runs-on: ubuntu-latest
